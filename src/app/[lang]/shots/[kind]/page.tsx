@@ -49,7 +49,7 @@ export default async function ShotPage({ params }: PageProps<"/[lang]/shots/[kin
           <div className="mt-8 max-w-[560px] text-balance text-[54px] font-semibold leading-[1.08] tracking-tight text-ink">{profile.name[lang]}</div>
           <div className="mt-3 text-[28px] font-medium text-sapphire-600">{profile.role[lang]}</div>
           <p className="mt-5 max-w-[520px] text-[21px] leading-[1.6] text-ink-2">{ogLine[lang]}</p>
-          <div className="mt-7 font-mono text-[15px] uppercase tracking-[0.16em] text-mute">Flutter · Dart · PHP API · TypeScript · Next.js</div>
+          <div className="mt-7 font-mono text-[15px] uppercase tracking-[0.16em] text-mute">Flutter · Dart · REST API · TypeScript · Next.js</div>
         </div>
         <div className="absolute right-[-40px] top-[70px] w-[620px] rotate-[-4deg] overflow-hidden rounded-xl shadow-2xl ring-1 ring-black/10">
           <Image src={lang === "en" ? "/shots/webadmin-dashboard-en.webp" : "/shots/webadmin-dashboard.webp"} alt="" width={1594} height={1042} className="w-full" />

@@ -103,10 +103,10 @@ export const projects: Project[] = [
     name: "Chaoperty Web Admin",
     tagline: { th: "ระบบหลังบ้านบริหารพื้นที่เช่า สำหรับตลาด มอลล์ และอาคาร", en: "The back office for rental spaces — markets, malls and buildings" },
     summary: {
-      th: "เว็บแอปพลิเคชัน Flutter Web ที่สาขาใช้บริหารพื้นที่เช่าครบวงจร : ผังพื้นที่ สัญญา ตั้งหนี้/วางบิล รับชำระและตรวจสอบสลิป มิเตอร์ รายงาน และสิทธิ์ผู้ใช้ — ส่วนที่ผมพัฒนาคือระบบรับชำระแบบใหม่ หน้าตรวจสอบการชำระเงินที่เช็คสลิปอัตโนมัติ รายงาน Excel เอกสาร/สัญญา PDF และ API",
-      en: "A Flutter Web application branches use to run rental spaces end to end: floor plans, contracts, billing, payments and slip verification, meters, reports and user permissions. My part: the new payment flow, the payment-verification page with automatic slip checks, Excel reports, document/contract PDFs and the APIs.",
+      th: "เว็บแอปพลิเคชัน Flutter Web ที่สาขาใช้บริหารพื้นที่เช่าครบวงจร : ผังพื้นที่ สัญญา ตั้งหนี้/วางบิล รับชำระและตรวจสอบสลิป มิเตอร์ รายงาน และสิทธิ์ผู้ใช้ — ส่วนที่ผมดูแลคือฝั่งหน้าบ้าน : ระบบรับชำระแบบใหม่ หน้าตรวจสอบการชำระเงินที่เช็คสลิปอัตโนมัติ รายงาน Excel เอกสาร/สัญญา PDF และแม่แบบเอกสาร",
+      en: "A Flutter Web application branches use to run rental spaces end to end: floor plans, contracts, billing, payments and slip verification, meters, reports and user permissions. My part is the front end: the new payment flow, the payment-verification page with automatic slip checks, Excel reports, document/contract PDFs and document templates.",
     },
-    role: { th: "นักพัฒนา — รับชำระ/ตรวจสลิป รายงาน เอกสาร และ API", en: "Developer — payments & slip checks, reports, documents, APIs" },
+    role: { th: "นักพัฒนาหน้าบ้าน — ฟีเจอร์ใหม่ รายงาน เอกสาร และซัพพอร์ตลูกค้า", en: "Front-end developer — features, reports, documents, customer support" },
     period: { th: "2567 – ปัจจุบัน", en: "2024 – present" },
     platform: { th: "Flutter Web · เบราว์เซอร์เดสก์ท็อป", en: "Flutter Web · desktop browsers" },
     accent: "leaf",
@@ -118,8 +118,8 @@ export const projects: Project[] = [
         en: "Chaoperty is the company's rental-space management system serving clients across northern and north-eastern Thailand — from fresh markets and community malls to office buildings, with anywhere from a few units to over a thousand stalls.",
       },
       {
-        th: "โค้ดเบสสะสมมาหลายปี (900+ ไฟล์ Dart) ลูกค้าแต่ละรายมีเอกสารและรายงานเฉพาะตัว งานของผมคือรับความต้องการ แล้วต่อยอดฟีเจอร์โดยไม่ทำให้สาขาอื่นพัง — ชิ้นใหญ่ที่สุดคือระบบรับชำระแบบใหม่กับหน้าตรวจสอบการชำระเงินที่เช็คสลิปอัตโนมัติ และระหว่างทางก็ทยอยจัดโครงสร้างโมดูลให้ดูแลง่ายขึ้น",
-        en: "The codebase grew over years (900+ Dart files) and every client has its own documents and reports. My job is to take requests and ship features without breaking other branches — the biggest being the new payment flow and the payment-verification page with automatic slip checks — and to restructure modules along the way so they're easier to maintain.",
+        th: "โค้ดเบสสะสมมาหลายปี (900+ ไฟล์ Dart) ลูกค้าแต่ละรายมีเอกสารและรายงานเฉพาะตัว งานหลักของผมอยู่ฝั่งหน้าบ้าน : รับความต้องการ ออกแบบหน้าตาเอง แล้วต่อยอดฟีเจอร์หรือแก้บัคโดยไม่ทำให้สาขาอื่นพัง — ชิ้นใหญ่ที่สุดคือระบบรับชำระแบบใหม่กับหน้าตรวจสอบการชำระเงินที่เช็คสลิปอัตโนมัติ นอกจากนี้ยังคอยช่วยทีม Implement ที่คุยกับลูกค้าแก้ปัญหาหน้างานให้ทันที และทยอยจัดโครงสร้างโมดูลให้ดูแลง่ายขึ้น",
+        en: "The codebase grew over years (900+ Dart files) and every client has its own documents and reports. My work is mostly front end: take requests, design the UI myself, and ship features or bug fixes without breaking other branches — the biggest being the new payment flow and the payment-verification page with automatic slip checks. I also back up the implementation team so customer issues get fixed on the spot, and restructure modules along the way so they're easier to maintain.",
       },
     ],
     contributions: [
@@ -127,8 +127,9 @@ export const projects: Project[] = [
       { th: "หน้า \"ตรวจสอบการชำระเงิน\" (ตรวจสลิปอัตโนมัติ) : อัปโหลด Bank Statement ตามรูปแบบไฟล์ของแต่ละธนาคาร ระบบจับคู่สลิปกับรายการเดินบัญชีพร้อมคะแนนความมั่นใจ ดูสลิปแบบซูม/หมุน และอนุมัติหรือปฏิเสธทีละหลายรายการ", en: "“Payment verification” page (automatic slip checks): upload a bank statement in each bank's file format, let the system match slips to bank transactions with a confidence score, zoom/rotate the slip, and approve or reject in bulk" },
       { th: "รายงาน Excel : รายรับ / ประจำวัน / ความเคลื่อนไหวธนาคาร พร้อมชีตสรุป 3 ชีต (ตามรายการ, ตามบัญชีรับเงิน, ตามผู้ทำรายการ) แถวรวมเป็นสูตร =SUM และหน้า \"เรียกดู\" บนเว็บที่ใช้สูตรเดียวกับไฟล์", en: "Excel reports: income, daily and bank-movement reports with three summary sheets (by item, by receiving account, by operator), =SUM formula totals, and an on-screen “View” dialog that uses the same formulas as the file" },
       { th: "เอกสาร PDF : สัญญาเช่าภาษาลาวที่จัดหน้า A4 อัตโนมัติ และใบเสร็จ/ใบแจ้งหนี้หลายแม่แบบทั้ง A4 และกระดาษความร้อน 58/80 mm พร้อมแถวตัดมัดจำ/VAT ท้ายบิล", en: "PDF documents: a Lao lease contract that paginates itself onto A4, and multi-template receipts/invoices for A4 and 58/80 mm thermal paper with deposit and VAT rows" },
-      { th: "API : พัฒนาและดูแลเส้น API ฝั่ง PHP ที่เว็บกับแอปใช้ร่วมกัน และเชื่อม Payment API ชุดใหม่ (Payment Intents / Reconcile)", en: "APIs: developed and maintained the PHP endpoints shared by the web and the app, and integrated the new Payment API (Payment Intents / Reconcile)" },
-      { th: "Widget/ฟีเจอร์ที่ได้รับมอบหมาย : จัดการสิทธิ์ผู้ใช้ (แอดมิน + ช่างที่ลงทะเบียนผ่าน LINE), จัดลำดับพื้นที่ทุกโซน, กำหนดขนาดพื้นที่ และหน้าเลือกแม่แบบเอกสาร", en: "Assigned widgets/features: user permissions (admins + technicians registered via LINE), area ordering across zones, area dimensions, and the document-template picker" },
+      { th: "หลังบ้านเท่าที่จำเป็น : แก้หรือเพิ่มส่วนใน API ฝั่ง PHP ที่ฟีเจอร์ต้องใช้ และเชื่อมหน้าเว็บกับ Payment API ชุดใหม่ (Payment Intents / Reconcile)", en: "Backend where needed: small changes and additions to the PHP API a feature depends on, and wiring the web to the new Payment API (Payment Intents / Reconcile)" },
+      { th: "ฟีเจอร์ใหม่และแก้บัค โดยออกแบบหน้าตาเอง : จัดลำดับพื้นที่ทุกโซน, กำหนดขนาดพื้นที่ และหน้าเลือกแม่แบบเอกสาร", en: "New features and bug fixes with UI I designed myself: area ordering across zones, area dimensions, and the document-template picker" },
+      { th: "ซัพพอร์ตทีม Implement : รับปัญหาที่ลูกค้าแจ้งผ่านทีมหน้างาน ตรวจหาสาเหตุ แล้วแก้และส่งขึ้นให้ได้ทันที", en: "Implementation support: take issues customers raise through the implementation team, find the cause, and ship a fix right away" },
       { th: "คลีนโค้ด : ทยอยแยกไฟล์หลายพันบรรทัดเป็น model / view / viewmodel / services ยุบหน้าที่เป็นสำเนากัน 4 หน้าให้เหลือไฟล์เดียว และใช้ shim บางๆ รักษาคลาสเดิมไว้ไม่ให้หน้าที่เรียกใช้พัง", en: "Clean code: gradually split multi-thousand-line files into model / view / viewmodel / services, collapsed four near-duplicate pages into one, and kept thin shims so existing callers don't break" },
     ],
     features: [

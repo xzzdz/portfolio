@@ -57,8 +57,8 @@ export const about = {
       en: "I'm a Flutter developer at Dzentric Co., Ltd. in Chiang Mai, working on Chaoperty — a rental-space management system that markets, community malls and office buildings use every day for contracts, billing, payments and utility meters.",
     },
     {
-      th: "แอป Handheld POS ผมพัฒนาเองทั้งหมด ตั้งแต่วางโครงสร้าง หน้าจอ การเชื่อม API จนถึงการพิมพ์ใบเสร็จบนเครื่อง ส่วนเว็บแอดมินผมรับงานตามความต้องการของลูกค้าแต่ละสาขา — หน้ารับชำระแบบใหม่ที่ตรวจสลิปอัตโนมัติ รายงาน Excel สัญญาเช่า PDF widget ใหม่ๆ ไปจนถึง API ฝั่ง PHP และเก็บกวาดโค้ดเดิมให้ทีมดูแลต่อได้ง่ายขึ้น",
-      en: "I built the handheld POS app on my own — architecture, screens, API integration and on-device printing. On the web admin I take each branch's requests and ship them: a new payment flow with automatic slip verification, Excel reports, lease-contract PDFs, new widgets and the PHP APIs behind them — and I clean up legacy code so the team can maintain it.",
+      th: "แอป Handheld POS ผมพัฒนาเองทั้งหมด ตั้งแต่วางโครงสร้าง หน้าจอ การเชื่อม API จนถึงการพิมพ์ใบเสร็จบนเครื่อง ส่วนเว็บแอดมินผมดูแลฝั่งหน้าบ้านเป็นหลัก — ออกแบบหน้าตาและพัฒนาฟีเจอร์ใหม่เอง แก้บัค ทำรายงาน Excel สัญญาและแม่แบบเอกสาร PDF แก้หรือเพิ่ม API หลังบ้านบ้างเท่าที่ฟีเจอร์ต้องใช้ และคอยช่วยทีม Implement ที่คุยกับลูกค้าแก้ปัญหาให้ได้ทันที",
+      en: "I built the handheld POS app on my own — architecture, screens, API integration and on-device printing. On the web admin I focus on the front end — I design and build new features myself, fix bugs, and make Excel reports, contracts and document templates; I make small backend API changes when a feature needs them, and back up the implementation team so customer issues get fixed on the spot.",
     },
     {
       th: "ตอนนี้กำลังต่อยอดด้าน TypeScript, Node.js และ Next.js (เว็บนี้คือผลลัพธ์ส่วนหนึ่ง) และพร้อมเรียนรู้เทคโนโลยีใหม่กับทีมพัฒนา",
@@ -67,7 +67,7 @@ export const about = {
   ] as L[],
   points: [
     { title: { th: "ทำตามแบบได้จริง", en: "Design to code" }, text: { th: "แปลง UX/UI จาก Figma เป็นหน้าจอที่ใช้งานได้ ทั้งมือถือและเว็บ", en: "Turn Figma UX/UI into working screens on mobile and web" } },
-    { title: { th: "API & Backend", en: "API & backend" }, text: { th: "ดูแล API ฝั่ง PHP และเชื่อม Payment API (Payment Intents / Reconcile)", en: "Maintain PHP endpoints and integrate the Payment Intents / Reconcile API" } },
+    { title: { th: "ออกแบบเอง & ซัพพอร์ต", en: "Own design & support" }, text: { th: "ออกแบบหน้าตาฟีเจอร์ใหม่เอง และช่วยทีม Implement แก้ปัญหาให้ลูกค้าได้ทันที", en: "Design new features myself and help the implementation team fix customer issues on the spot" } },
     { title: { th: "คลีนโค้ด & ทีม", en: "Clean code & team" }, text: { th: "แยกไฟล์ใหญ่เป็น MVVM · GitHub · Pull Request · code review", en: "Split monoliths into MVVM · GitHub · pull requests · code review" } },
   ],
 };
@@ -85,7 +85,7 @@ export const skills: SkillGroup[] = [
   },
   {
     title: { th: "API & Backend", en: "API & backend" },
-    items: [{ name: "REST API (Dio / http)" }, { name: "PHP API" }, { name: "JSON & data mapping" }, { name: "Payment Intents · Reconcile" }, { name: "Slip verification" }, { name: "PromptPay (EMVCo)" }, { name: "Node.js", learning: true }],
+    items: [{ name: "REST API (Dio / http)" }, { name: "PHP (API tweaks)" }, { name: "JSON & data mapping" }, { name: "Payment Intents · Reconcile" }, { name: "Slip verification" }, { name: "PromptPay (EMVCo)" }, { name: "Node.js", learning: true }],
   },
   {
     title: { th: "เอกสาร & การพิมพ์", en: "Documents & printing" },
@@ -114,7 +114,8 @@ export const experience = {
     { th: "พัฒนาหน้ารับชำระแบบใหม่ของเว็บแอดมิน (Payment Intents) : บิลจัดกลุ่มตามผู้เช่า/ธนาคาร ออก QR พร้อมนับถอยหลังและต่ออายุ แนบสลิป และคำนวณ VAT / หัก ณ ที่จ่าย", en: "Built the web admin's new payment screen (Payment Intents): invoices grouped by tenant and bank, QR with countdown and renewal, slip upload, and VAT / withholding-tax calculation" },
     { th: "ทำหน้า \"ตรวจสอบการชำระเงิน\" ที่ตรวจสลิปอัตโนมัติ : อัปโหลด Bank Statement (Excel) ให้ระบบจับคู่กับสลิปพร้อมคะแนนความมั่นใจ แล้วอนุมัติหรือปฏิเสธได้ทีละหลายรายการ", en: "Built the \"Payment verification\" page with automatic slip checks: upload a bank statement (Excel), let the system match it to slips with a confidence score, then approve or reject in bulk" },
     { th: "ทำรายงาน Excel (Syncfusion XlsIO) พร้อมชีตสรุปและแถวรวมเป็นสูตร และเอกสาร PDF : สัญญาเช่า (รวมภาษาลาว) ใบเสร็จ/ใบแจ้งหนี้หลายแม่แบบ ทั้ง A4 และกระดาษความร้อน", en: "Built Excel reports (Syncfusion XlsIO) with summary sheets and formula totals, plus PDFs: lease contracts (including Lao) and multi-template receipts/invoices for A4 and thermal paper" },
-    { th: "พัฒนาและดูแล API ฝั่ง PHP ที่เว็บกับแอปใช้ร่วมกัน และทำ widget/ฟีเจอร์ใหม่ตามที่ได้รับมอบหมาย เช่น จัดการสิทธิ์ผู้ใช้ จัดลำดับพื้นที่ แม่แบบเอกสาร", en: "Developed and maintained the PHP API shared by the web and the app, and shipped assigned widgets/features such as user permissions, area ordering and document templates" },
+    { th: "ดูแลงานหน้าบ้านของเว็บแอดมินเป็นหลัก : ออกแบบหน้าตาและพัฒนาฟีเจอร์ใหม่เอง แก้บัค และทำแม่แบบเอกสาร เช่น จัดลำดับพื้นที่ หน้าเลือกแม่แบบเอกสาร — ฝั่งหลังบ้านแก้หรือเพิ่ม API (PHP) เท่าที่ฟีเจอร์ต้องใช้", en: "Own the web admin's front end: design and build new features myself, fix bugs and add document templates (e.g. area ordering, a template picker) — with small PHP API changes when a feature needs them" },
+    { th: "ซัพพอร์ตทีม Implement ที่ดูแลลูกค้า : รับปัญหาจากหน้างาน ตรวจหาสาเหตุ แล้วแก้ให้ได้ทันที", en: "Back up the implementation team that works with customers: take issues from the field, find the cause and fix them right away" },
     { th: "คลีนโค้ด : ทยอยแยกหน้าจอไฟล์ใหญ่หลายพันบรรทัดเป็น MVVM + service layer ยุบหน้าที่เป็นสำเนากัน 4 หน้าให้เหลือไฟล์เดียว และลบโค้ดที่ไม่ได้ใช้ โดยไม่ทำให้หน้าที่เรียกใช้เดิมพัง", en: "Clean code: gradually split multi-thousand-line screens into MVVM + a service layer, collapsed four near-duplicate pages into one and removed dead code — without breaking existing callers" },
     { th: "ทำงานร่วมกับทีมผ่าน GitHub : feature branch, Pull Request พร้อมคำอธิบายละเอียด, code review และ tag เวอร์ชันแบบ SemVer", en: "Collaborated through GitHub: feature branches, detailed pull requests, code review and SemVer release tags" },
   ] as L[],

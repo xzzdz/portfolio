@@ -8,8 +8,8 @@ export const profile = {
   shortName: { th: "กิตติกร", en: "Kittikorn" } satisfies L,
   role: { th: "Flutter & Web Developer", en: "Flutter & Web Developer" } satisfies L,
   tagline: {
-    th: "นักพัฒนา Flutter ผู้พัฒนาแอป Handheld POS ของระบบ Chaoperty เองทั้งแอป และพัฒนาเว็บแอดมินส่วนรับชำระ/ตรวจสลิปอัตโนมัติ รายงาน Excel สัญญา PDF และ API",
-    en: "Flutter developer who built the Chaoperty handheld POS app end to end and develops its web admin — payments with automatic slip checks, Excel reports, contract PDFs and APIs.",
+    th: "นักพัฒนา Flutter ผู้พัฒนาแอป Handheld POS ของระบบ Chaoperty เองทั้งแอป และพัฒนาเว็บแอดมินฝั่งหน้าบ้าน : ฟีเจอร์ใหม่ รับชำระ/ตรวจสลิปอัตโนมัติ รายงาน Excel และสัญญา PDF",
+    en: "Flutter developer who built the Chaoperty handheld POS app end to end and develops its web admin front end — new features, payments with automatic slip checks, Excel reports and contract PDFs.",
   } satisfies L,
   location: { th: "เชียงใหม่ ประเทศไทย", en: "Chiang Mai, Thailand" } satisfies L,
   availability: { th: "เปิดรับโอกาสงานใหม่", en: "Open to new opportunities" } satisfies L,
