@@ -3,7 +3,7 @@ import Link from "next/link";
 import { profile } from "@/content/profile";
 import { nav, ui } from "@/content/site";
 import type { Locale } from "@/lib/i18n";
-import { GithubIcon, LinkedinIcon } from "./BrandIcons";
+import { GithubIcon } from "./BrandIcons";
 import { LangSwitch } from "./LangSwitch";
 
 export function Monogram({ className = "size-9 text-[15px]" }: { className?: string }) {
@@ -83,11 +83,6 @@ export function SiteFooter({ locale }: { locale: Locale }) {
           <a href={profile.github} target="_blank" rel="noreferrer" className="grid size-10 place-items-center rounded-full border border-line text-ink-2 transition hover:border-ink hover:text-ink" aria-label="GitHub">
             <GithubIcon className="size-[18px]" />
           </a>
-          {profile.linkedin && (
-            <a href={profile.linkedin} target="_blank" rel="noreferrer" className="grid size-10 place-items-center rounded-full border border-line text-ink-2 transition hover:border-ink hover:text-ink" aria-label="LinkedIn">
-              <LinkedinIcon className="size-[18px]" />
-            </a>
-          )}
           <a href={`mailto:${profile.email}`} className="flex h-10 items-center gap-1.5 rounded-full border border-line px-4 text-[13.5px] text-ink-2 transition hover:border-ink hover:text-ink">
             {profile.email}
             <ArrowUpRight className="size-3.5" />

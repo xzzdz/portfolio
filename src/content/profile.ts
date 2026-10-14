@@ -17,11 +17,9 @@ export const profile = {
   email: "kttikon160@gmail.com",
   phone: "095-146-6990",
   github: "https://github.com/xzzdz",
-  /** เว้นว่างไว้ได้ — ลิงก์ LinkedIn ทั้งเว็บและ Resume จะซ่อนเองจนกว่าจะใส่ */
-  linkedin: "" as string,
   /**
    * โดเมนที่ deploy จริง เช่น https://kittikorn.vercel.app — ใส่แล้ว Resume จะมี QR + ลิงก์ผลงาน
    * ระหว่างที่ยังว่าง metadata ใช้ URL production ของ Vercel ให้อัตโนมัติ (ดู src/lib/site.ts)
    */
-  siteUrl: "" as string,
+  siteUrl: "https://kittikorn.vercel.app" as string,
 } as const;

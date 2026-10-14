@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { ArrowLeft, ArrowUpRight, Download, Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { GithubIcon, LinkedinIcon } from "@/components/site/BrandIcons";
+import { GithubIcon } from "@/components/site/BrandIcons";
 import { PrintButton } from "@/components/site/PrintButton";
 import { QrCode } from "@/components/site/QrCode";
 import { LangSwitch } from "@/components/site/LangSwitch";
@@ -62,11 +62,6 @@ export default async function ResumePage({ params }: PageProps<"/[lang]/resume">
               <li className="flex items-center gap-1.5">
                 <GithubIcon className="size-[3.2mm]" /> {github}
               </li>
-              {profile.linkedin && (
-                <li className="flex items-center gap-1.5">
-                  <LinkedinIcon className="size-[3.2mm]" /> {profile.linkedin.replace(/^https:\/\/(www\.)?/, "")}
-                </li>
-              )}
             </ul>
           </div>
           {site && (

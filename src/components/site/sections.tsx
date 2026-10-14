@@ -6,7 +6,7 @@ import { projects, type Project } from "@/content/projects";
 import { about, contact, education, experience, facts, hero, playground, skills, ui } from "@/content/site";
 import { cn } from "@/lib/cn";
 import type { Locale } from "@/lib/i18n";
-import { GithubIcon, LinkedinIcon } from "./BrandIcons";
+import { GithubIcon } from "./BrandIcons";
 import { CopyButton } from "./CopyButton";
 import { HeroVisual } from "./HeroVisual";
 import { SectionHead } from "./SiteChrome";
@@ -311,7 +311,6 @@ export function Contact({ locale }: { locale: Locale }) {
               {[
                 { icon: Phone, label: contact.phone[locale], value: profile.phone, href: `tel:${profile.phone.replace(/[^\d+]/g, "")}` },
                 { icon: GithubIcon, label: "GitHub", value: profile.github.replace("https://", ""), href: profile.github },
-                ...(profile.linkedin ? [{ icon: LinkedinIcon, label: "LinkedIn", value: profile.linkedin.replace(/^https:\/\/(www\.)?/, ""), href: profile.linkedin }] : []),
                 { icon: MapPin, label: contact.location[locale], value: profile.location[locale] },
               ].map((c) => (
                 <li key={c.label}>

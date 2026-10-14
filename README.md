@@ -26,7 +26,7 @@ npm run dev          # http://localhost:3000
 
 | ไฟล์ | มีอะไร |
 |---|---|
-| `profile.ts` | ชื่อ (ไทย/อังกฤษ), อีเมล, เบอร์โทร, GitHub, LinkedIn, โดเมนที่ deploy (`siteUrl`) — `linkedin` กับ `siteUrl` เว้นว่างไว้ได้ ส่วนที่เกี่ยวข้องจะซ่อนเองจนกว่าจะใส่ |
+| `profile.ts` | ชื่อ (ไทย/อังกฤษ), อีเมล, เบอร์โทร, GitHub, โดเมนที่ deploy (`siteUrl` — ตอนนี้ `https://kittikorn.vercel.app`) — ถ้าเว้น `siteUrl` ว่าง Resume จะไม่พิมพ์ QR/ลิงก์ผลงาน |
 | `site.ts` | ข้อความหน้าแรก, ทักษะ, ประสบการณ์ (`experience.position`), การศึกษา |
 | `projects.ts` | เนื้อหาเคสสตัดี้ทั้งสองโปรเจค |
 | `resume.ts` | เนื้อหาเวอร์ชันสั้นสำหรับ Resume หน้าเดียว |
@@ -40,7 +40,7 @@ npm run shots        # → public/shots/*.webp, public/og.png, public/og-en.png 
 
 ทั้งสองสคริปต์ใช้ Chrome ที่ติดตั้งในเครื่อง ถ้า dev server ไม่ได้อยู่ที่พอร์ต 3000 ให้ระบุ `BASE=http://localhost:3100`
 
-Resume ล็อกไว้ที่ A4 หนึ่งหน้า ส่วนที่ยาวเกินจะถูกตัดทิ้ง `npm run resume` จึงเช็คให้ทุกครั้ง ถ้าขึ้น `⚠ เนื้อหาเกิน A4` ให้ตัดข้อความใน `resume.ts` ให้สั้นลง (ตอนนี้ใส่โดเมนและ LinkedIn ครบแล้วก็ยังพอดีหน้าเดียว)
+Resume ล็อกไว้ที่ A4 หนึ่งหน้า ส่วนที่ยาวเกินจะถูกตัดทิ้ง `npm run resume` จึงเช็คให้ทุกครั้ง ถ้าขึ้น `⚠ เนื้อหาเกิน A4` ให้ตัดข้อความใน `resume.ts` ให้สั้นลง (ตอนนี้มี QR แล้วยังพอดีหน้าเดียว)
 
 ## Deploy (Vercel)
 
